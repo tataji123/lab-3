@@ -1,0 +1,18 @@
+arr = [27, 63, 54, 81, 99]
+n = len(arr)
+x =int( input("ENTER THE VALUE TO BE SEARCHED:"))
+ 
+def search(arr, n, x): 
+  
+    for i in range (0,n): 
+        if (arr[i] == x): 
+            return i
+    
+    return -1 
+
+result = search(arr, n, x)
+
+if(result == -1): 
+    print("Element is not present in array") 
+else: 
+    print("Element is present at index", result)
